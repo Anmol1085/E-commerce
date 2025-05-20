@@ -35,7 +35,7 @@ function App() {
         <Route exact path='/product-details/:id' element={<Protected><ProductDetailsPage/></Protected>}/>
 
         {
-          loggedInUser?.isAdmin?(
+          loggedInUser?.isAdmin?(   
             // admin routes
             <>
             <Route path='/admin/dashboard' element={<Protected><AdminDashboardPage/></Protected>}/>
@@ -55,7 +55,7 @@ function App() {
             <Route path='/orders' element={<Protected><UserOrdersPage/></Protected>}/>
             <Route path='/wishlist' element={<Protected><WishlistPage/></Protected>}/>
             </>
-          )
+          )    
         }
 
         <Route path='*' element={<NotFoundPage/>} />

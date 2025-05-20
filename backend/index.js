@@ -24,12 +24,12 @@ connectToDB()
 
 
 // middlewares
-server.use(cors({origin:process.env.ORIGIN,credentials:true,exposedHeaders:['X-Total-Count'],methods:['GET','POST','PATCH','DELETE']}))
-server.use(express.json())
-server.use(cookieParser())
-server.use(morgan("tiny"))
-
-// routeMiddleware
+server.use(cors({origin:process.env.ORIGIN,credentials:true,exposedHeaders:['X-Total-Count'],methods:['GET','POST','PATCH','DELETE']})) 
+server.use(express.json()) 
+server.use(cookieParser()) 
+server.use(morgan("tiny")) 
+ 
+ // routeMiddleware
 server.use("/auth",authRoutes)
 server.use("/users",userRoutes)
 server.use("/products",productRoutes)
@@ -43,10 +43,10 @@ server.use("/wishlist",wishlistRoutes)
 
 
 
-server.get("/",(req,res)=>{
-    res.status(200).json({message:'running'})
-})
+ server.get("/",(req,res)=>{
+     res.status(200).json({message:'running'})
+}) 
 
-server.listen(8000,()=>{
-    console.log('server [STARTED] ~ http://localhost:8000');
-})
+server.listen(8000,()=>{                                           
+    console.log('server [STARTED] ~ http://localhost:8000');           
+})                                                                   

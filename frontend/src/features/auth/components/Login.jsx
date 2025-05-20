@@ -30,7 +30,7 @@ export const Login = () => {
       navigate("/verify-otp")
     }
   },[loggedInUser])
-
+   
   // handles login error and toast them
   useEffect(()=>{
     if(error){
@@ -76,7 +76,7 @@ export const Login = () => {
                   <Typography alignSelf={'flex-end'} color={'GrayText'} variant='body2'>- Shop Anything</Typography>
                 </Stack>
 
-              </Stack>
+              </Stack> 
 
                 <Stack mt={4} spacing={2} width={is480?"95vw":'28rem'} component={'form'} noValidate onSubmit={handleSubmit(handleLogin)}>
 

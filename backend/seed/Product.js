@@ -12,7 +12,7 @@ const products = [
     category: "65a7e24602e12c44f599442c",
     thumbnail: "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
     images: [
-      "https://cdn.dummyjson.com/product-images/1/1.jpg",
+      "https://i.pinimg.com/736x/cf/93/62/cf936218168ddefdef5efab6562c748c.jpg",
       "https://cdn.dummyjson.com/product-images/1/2.jpg",
       "https://cdn.dummyjson.com/product-images/1/3.jpg",
       "https://cdn.dummyjson.com/product-images/1/4.jpg",
